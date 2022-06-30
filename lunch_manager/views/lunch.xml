@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="action_lunch_manager">
+          <field name="name">Lunch Manager</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">lunch.lunch</field>
+          <field name="view_mode">tree,form</field>
+          <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                  Create record
+              </p>
+          </field>
+        </record>
+
+        <menuitem id="lunch_menu"
+                  name="Lunch"
+                  action="action_lunch_manager"
+        />
+    </data>
+</odoo>
